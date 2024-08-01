@@ -12,7 +12,7 @@ const Game = () => {
 
     const handlePlayerSelection = (selection : string) => {
         setPlayerSelection(selection);
-        setBotSelection('♻')
+        setBotSelection('🎲')
         setTimeout(() => {
             const bot = options[Math.floor(Math.random() * options.length)];
             setBotSelection(bot);
