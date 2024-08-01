@@ -12,7 +12,7 @@ const Game = () => {
 
     const handlePlayerSelection = (selection : string) => {
         setPlayerSelection(selection);
-        setBotSelection('🎲')
+        setBotSelection('🎲');
         setTimeout(() => {
             const bot = options[Math.floor(Math.random() * options.length)];
             setBotSelection(bot);
@@ -20,7 +20,7 @@ const Game = () => {
         }, 1000);
     }
 
-    // Determining the winner 
+    // Determining the winner  of the game
 
     const determineWinner = (selection : string , bot : string) => {
         const winner = selection === bot ? 'Draw!' : (selection === '👊' && bot === '✌')
