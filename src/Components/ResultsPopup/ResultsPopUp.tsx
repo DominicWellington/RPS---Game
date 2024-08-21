@@ -14,7 +14,7 @@ const ResultsPop: React.FC<ResultsPopProps>= ({totalScore, handleReset, showMode
                  items-center">
                     <div className="bg-white p-4 rounded-md w-[500px] h-[500px] flex justify-center items-center flex-col">
                         <h2 className=" text-3xl font-bold">{totalScore}</h2>
-                        <button onClick={handleReset} className="border border-black text-yellow-400 text-lg 
+                        <button onClick={handleReset} className="border border-yellow-200 text-yellow-400 text-lg 
                          bg-yellow-200 rounded-md px-5 py-1 mt-10">
                         Play Again</button>
                     </div>
